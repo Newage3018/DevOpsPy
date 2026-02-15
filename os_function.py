@@ -8,3 +8,5 @@ os.listdir('.')
 os.rename('_testfile', 'testfile') # переименование файла  '_testfile' на 'testfile'
 
 os.chmod('my_script.py', 0o777) # смена прав на файл
+
+os.mkdir('new_dir') # создание нового каталога
