@@ -6,3 +6,5 @@ os.listdir('.')
 # директори , включая скрытые
 
 os.rename('_testfile', 'testfile') # переименование файла  '_testfile' на 'testfile'
+
+os.chmod('my_script.py', 0o777) # смена прав на файл
