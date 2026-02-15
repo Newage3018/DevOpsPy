@@ -42,5 +42,14 @@ os.path.split(cur_dir) # Отделяет конечный уровень пут
 
 os.path.dirname(cur_dir) # Получаем только родительский путь 'D:\\DevOps'
 
+os.path.basename(cur_dir) # Получаем только имя конечный каталог 'DevOpsPy'
+
+# Просканируем текущий каталог и разделим его на пути
+def function1():
+    import os
+    cur_dir = os.getcwd()  # Получение текущего каталога 'D:\\DevOps\\DevOpsPy'
+    while os.path.basename(cur_dir): # пока существует конечный каталог
+        cur_dir = os.path.dirname(cur_dir) # получаем родительский путь
+        print(cur_dir)
 
 
